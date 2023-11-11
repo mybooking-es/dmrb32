@@ -1,0 +1,123 @@
+GIT
+  remote: https://github.com/mybooking-es/dm-serializer
+  revision: 55fdd0f2f5043f0eb810adb87a0b54bd626575c1
+  specs:
+    dm-serializer (1.2.2)
+      dm-core (~> 1.2.0)
+      fastercsv (~> 1.5)
+      json (~> 2.6)
+      json_pure (~> 2.6)
+      multi_json (~> 1.0)
+
+GIT
+  remote: https://github.com/mybooking-es/dm-types
+  revision: 3a1c6268d859c4388a5448883e42ed7ca670dbf5
+  specs:
+    dm-types (1.2.2)
+      bcrypt-ruby (~> 3.0)
+      dm-core (~> 1.2.0)
+      fastercsv (~> 1.5)
+      json (~> 2.6)
+      multi_json (~> 1.0)
+      stringex (~> 1.4)
+      uuidtools (~> 2.1)
+
+GIT
+  remote: https://github.com/mybooking-es/do_mysql
+  revision: a7921458e059e0c1fb0767221585dac5f9064296
+  specs:
+    do_mysql (0.10.17)
+      bigdecimal
+      data_objects (= 0.10.17)
+      rake-compiler
+
+PATH
+  remote: vendor/data_objects
+  specs:
+    data_objects (0.10.17)
+      addressable (~> 2.1)
+
+PATH
+  remote: vendor/dm-aggregates
+  specs:
+    dm-aggregates (1.2.0)
+      dm-core (~> 1.2.0)
+
+PATH
+  remote: vendor/dm-core
+  specs:
+    dm-core (1.2.1)
+      addressable (~> 2.3)
+
+PATH
+  remote: vendor/dm-do-adapter
+  specs:
+    dm-do-adapter (1.2.0)
+      data_objects (~> 0.10.6)
+      dm-core (~> 1.2.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.8.5)
+      public_suffix (>= 2.0.2, < 6.0)
+    bcrypt (3.1.19)
+    bcrypt-ruby (3.1.5)
+      bcrypt (>= 3.1.3)
+    bigdecimal (3.1.4)
+    data_mapper (1.2.0)
+      dm-aggregates (~> 1.2.0)
+      dm-constraints (~> 1.2.0)
+      dm-core (~> 1.2.0)
+      dm-migrations (~> 1.2.0)
+      dm-serializer (~> 1.2.0)
+      dm-timestamps (~> 1.2.0)
+      dm-transactions (~> 1.2.0)
+      dm-types (~> 1.2.0)
+      dm-validations (~> 1.2.0)
+    dm-constraints (1.2.0)
+      dm-core (~> 1.2.0)
+    dm-migrations (1.2.0)
+      dm-core (~> 1.2.0)
+    dm-mysql-adapter (1.2.0)
+      dm-do-adapter (~> 1.2.0)
+      do_mysql (~> 0.10.6)
+    dm-timestamps (1.2.0)
+      dm-core (~> 1.2.0)
+    dm-transactions (1.2.0)
+      dm-core (~> 1.2.0)
+    dm-validations (1.2.0)
+      dm-core (~> 1.2.0)
+    dotenv (2.8.1)
+    fastercsv (1.5.5)
+    json (2.6.3)
+    json_pure (2.6.3)
+    multi_json (1.15.0)
+    public_suffix (5.0.3)
+    rake (13.1.0)
+    rake-compiler (1.2.5)
+      rake
+    stringex (1.5.1)
+    uuidtools (2.2.0)
+
+PLATFORMS
+  arm64-darwin-21
+
+DEPENDENCIES
+  data_mapper (= 1.2.0)
+  data_objects!
+  dm-aggregates!
+  dm-core!
+  dm-do-adapter!
+  dm-mysql-adapter (= 1.2.0)
+  dm-serializer!
+  dm-types!
+  do_mysql (= 0.10.17)!
+  dotenv
+  json (~> 2.6.3)
+
+RUBY VERSION
+   ruby 3.1.4p223
+
+BUNDLED WITH
+   2.4.10
