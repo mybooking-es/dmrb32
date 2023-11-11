@@ -1,4 +1,6 @@
 require 'data_mapper'
+require 'dm-do-adapter'
+require 'dm-transactions'
 
 # Load the environment variables wit
 require 'dotenv'

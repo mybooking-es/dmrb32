@@ -1,6 +1,6 @@
 require 'data_objects'
 require 'dm-core'
-
+p "load DataObjectsAdapter"
 module DataMapper
   module Adapters
 

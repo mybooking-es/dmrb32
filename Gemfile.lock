@@ -31,6 +31,15 @@ GIT
       data_objects (= 0.10.17)
       rake-compiler
 
+GIT
+  remote: https://github.com/mybooking-es/do_sqlite3
+  revision: 9de8839e9eee54349657f5352d887e1875885a68
+  specs:
+    do_sqlite3 (0.10.17)
+      bigdecimal
+      data_objects (= 0.10.17)
+      rake-compiler
+
 PATH
   remote: vendor/data_objects
   specs:
@@ -54,6 +63,12 @@ PATH
   specs:
     dm-do-adapter (1.2.0)
       data_objects (~> 0.10.6)
+      dm-core (~> 1.2.0)
+
+PATH
+  remote: vendor/dm-transactions
+  specs:
+    dm-transactions (1.2.0)
       dm-core (~> 1.2.0)
 
 GEM
@@ -82,9 +97,10 @@ GEM
     dm-mysql-adapter (1.2.0)
       dm-do-adapter (~> 1.2.0)
       do_mysql (~> 0.10.6)
+    dm-sqlite-adapter (1.2.0)
+      dm-do-adapter (~> 1.2.0)
+      do_sqlite3 (~> 0.10.6)
     dm-timestamps (1.2.0)
-      dm-core (~> 1.2.0)
-    dm-transactions (1.2.0)
       dm-core (~> 1.2.0)
     dm-validations (1.2.0)
       dm-core (~> 1.2.0)
@@ -111,13 +127,16 @@ DEPENDENCIES
   dm-do-adapter!
   dm-mysql-adapter (= 1.2.0)
   dm-serializer!
+  dm-sqlite-adapter (= 1.2.0)
+  dm-transactions!
   dm-types!
   do_mysql (= 0.10.17)!
+  do_sqlite3 (= 0.10.17)!
   dotenv
   json (~> 2.6.3)
 
 RUBY VERSION
-   ruby 3.1.4p223
+   ruby 3.2.2p53
 
 BUNDLED WITH
    2.4.10

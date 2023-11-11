@@ -1,3 +1,4 @@
+p "load Aggregates::DataObjectsAdapter"
 module DataMapper
   module Aggregates
     module DataObjectsAdapter
