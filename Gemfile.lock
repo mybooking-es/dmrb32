@@ -72,6 +72,12 @@ PATH
       dm-core (~> 1.2.0)
 
 PATH
+  remote: vendor/dm-migrations
+  specs:
+    dm-migrations (1.2.0)
+      dm-core (~> 1.2.0)
+
+PATH
   remote: vendor/dm-transactions
   specs:
     dm-transactions (1.2.0)
@@ -96,8 +102,6 @@ GEM
       dm-transactions (~> 1.2.0)
       dm-types (~> 1.2.0)
       dm-validations (~> 1.2.0)
-    dm-migrations (1.2.0)
-      dm-core (~> 1.2.0)
     dm-mysql-adapter (1.2.0)
       dm-do-adapter (~> 1.2.0)
       do_mysql (~> 0.10.6)
@@ -130,6 +134,7 @@ DEPENDENCIES
   dm-constraints!
   dm-core!
   dm-do-adapter!
+  dm-migrations!
   dm-mysql-adapter (= 1.2.0)
   dm-serializer!
   dm-sqlite-adapter (= 1.2.0)

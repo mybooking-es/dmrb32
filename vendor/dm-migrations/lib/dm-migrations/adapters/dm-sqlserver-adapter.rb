@@ -7,7 +7,7 @@ module DataMapper
 
       DEFAULT_CHARACTER_SET = 'utf8'.freeze
 
-      include DataObjectsAdapter
+      include DataObjectsAdapterMigration
 
       # @api private
       def self.included(base)

@@ -14,7 +14,7 @@ gem "dm-do-adapter", path: "vendor/dm-do-adapter"
 gem "dm-transactions", path: "vendor/dm-transactions"
 gem "dm-aggregates", path: "vendor/dm-aggregates" 
 gem "dm-constraints", path: "vendor/dm-constraints" 
-#gem "dm-migrations", path: "vendor/dm-migrations"
+gem "dm-migrations", path: "vendor/dm-migrations"
 
 gem "data_objects", path: "vendor/data_objects"
 gem "dm-types", git: "https://github.com/mybooking-es/dm-types"

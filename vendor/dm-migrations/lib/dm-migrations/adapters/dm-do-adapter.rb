@@ -3,7 +3,7 @@ require 'dm-migrations/auto_migration'
 module DataMapper
   module Migrations
 
-    module DataObjectsAdapter
+    module DataObjectsAdapterMigration
 
       # Returns whether the storage_name exists.
       #
@@ -129,6 +129,7 @@ module DataMapper
 
         # @api private
         def schema_name
+          p "DO - schema_name"
           raise NotImplementedError, "#{self.class}#schema_name not implemented"
         end
 

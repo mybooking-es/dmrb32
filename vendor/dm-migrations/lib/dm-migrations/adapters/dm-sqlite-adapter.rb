@@ -5,7 +5,7 @@ module DataMapper
   module Migrations
     module SqliteAdapter
 
-      include DataObjectsAdapter
+      include DataObjectsAdapterMigration
 
       # @api private
       def self.included(base)

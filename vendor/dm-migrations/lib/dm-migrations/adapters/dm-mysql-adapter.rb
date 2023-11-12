@@ -9,7 +9,7 @@ module DataMapper
       DEFAULT_CHARACTER_SET = 'utf8'.freeze
       DEFAULT_COLLATION     = 'utf8_unicode_ci'.freeze
 
-      include DataObjectsAdapter
+      include DataObjectsAdapterMigration
 
       # @api private
       def self.included(base)
@@ -52,6 +52,7 @@ module DataMapper
 
         # @api private
         def schema_name
+          p "MYSQL - schema_name"
           # TODO: is there a cleaner way to find out the current DB we are connected to?
           normalized_uri.path.split('/').last
         end
