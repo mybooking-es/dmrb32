@@ -44,12 +44,6 @@ module DataMapper
         end
 
         # @api private
-        def schema_name
-          # TODO: is there a cleaner way to find out the current DB we are connected to?
-          normalized_uri.path.split('/').last
-        end
-
-        # @api private
         def create_table_statement(connection, model, properties)
           statement = DataMapper::Ext::String.compress_lines(<<-SQL)
             CREATE TABLE #{quote_name(model.storage_name(name))}
