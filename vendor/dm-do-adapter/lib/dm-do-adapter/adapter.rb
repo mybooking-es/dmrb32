@@ -754,7 +754,7 @@ module DataMapper
       include SQL
 
     end
-
+    p "const_added dataobjectsAdapter"
     const_added(:DataObjectsAdapter)
   end
 end

@@ -401,6 +401,7 @@ module DataMapper
     extendable do
       # @api private
       def const_added(const_name)
+        p "const_added dm-transactions"
         include_transaction_api(const_name)
         super
       end

@@ -49,6 +49,7 @@ module DataMapper
     extendable do
       # @api private
       def const_added(const_name)
+        p "const_added dm-aggregates"
         include_aggregate_api(const_name)
         super
       end
