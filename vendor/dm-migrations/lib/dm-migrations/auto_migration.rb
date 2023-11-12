@@ -226,7 +226,7 @@ module DataMapper
 
     extendable do
       # @api private
-      def dm_const_added(const_name)
+      def const_added(const_name)
         include_migration_api(const_name)
         super
       end

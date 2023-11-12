@@ -3,7 +3,7 @@ require 'dm-migrations/auto_migration'
 module DataMapper
   module Migrations
 
-    module DataObjectsAdapterMigration
+    module DataObjectsAdapter
 
       # Returns whether the storage_name exists.
       #

@@ -5,7 +5,7 @@ module DataMapper
   module Migrations
     module PostgresAdapter
 
-      include DataObjectsAdapterMigration
+      include DataObjectsAdapter
 
       # @api private
       def self.included(base)

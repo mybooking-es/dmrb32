@@ -146,7 +146,7 @@ DEPENDENCIES
   json (~> 2.6.3)
 
 RUBY VERSION
-   ruby 3.2.2p53
+   ruby 3.3.0.preview2
 
 BUNDLED WITH
    2.4.10
