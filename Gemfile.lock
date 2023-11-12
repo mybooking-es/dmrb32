@@ -53,6 +53,12 @@ PATH
       dm-core (~> 1.2.0)
 
 PATH
+  remote: vendor/dm-constraints
+  specs:
+    dm-constraints (1.2.0)
+      dm-core (~> 1.2.0)
+
+PATH
   remote: vendor/dm-core
   specs:
     dm-core (1.2.1)
@@ -90,8 +96,6 @@ GEM
       dm-transactions (~> 1.2.0)
       dm-types (~> 1.2.0)
       dm-validations (~> 1.2.0)
-    dm-constraints (1.2.0)
-      dm-core (~> 1.2.0)
     dm-migrations (1.2.0)
       dm-core (~> 1.2.0)
     dm-mysql-adapter (1.2.0)
@@ -123,6 +127,7 @@ DEPENDENCIES
   data_mapper (= 1.2.0)
   data_objects!
   dm-aggregates!
+  dm-constraints!
   dm-core!
   dm-do-adapter!
   dm-mysql-adapter (= 1.2.0)

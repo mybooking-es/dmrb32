@@ -215,7 +215,7 @@ module DataMapper
 
     extendable do
       # @api private
-      def const_added(const_name)
+      def dm_const_added(const_name)
       end
     end
   end # module Adapters

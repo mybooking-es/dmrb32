@@ -231,6 +231,6 @@ module DataMapper
       end
     end # class AbstractAdapter
 
-    const_added(:AbstractAdapter)
+    dm_const_added(:AbstractAdapter)
   end # module Adapters
 end # module DataMapper

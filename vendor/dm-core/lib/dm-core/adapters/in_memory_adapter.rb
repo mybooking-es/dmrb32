@@ -108,6 +108,6 @@ module DataMapper
 
     end # class InMemoryAdapter
 
-    const_added(:InMemoryAdapter)
+    dm_const_added(:InMemoryAdapter)
   end # module Adapters
 end # module DataMapper
