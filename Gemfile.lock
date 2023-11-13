@@ -78,6 +78,20 @@ PATH
       dm-core (~> 1.2.0)
 
 PATH
+  remote: vendor/dm-mysql-adapter
+  specs:
+    dm-mysql-adapter (1.2.0)
+      dm-do-adapter (~> 1.2.0)
+      do_mysql (~> 0.10.6)
+
+PATH
+  remote: vendor/dm-sqlite-adapter
+  specs:
+    dm-sqlite-adapter (1.2.0)
+      dm-do-adapter (~> 1.2.0)
+      do_sqlite3 (~> 0.10.6)
+
+PATH
   remote: vendor/dm-transactions
   specs:
     dm-transactions (1.2.0)
@@ -102,12 +116,6 @@ GEM
       dm-transactions (~> 1.2.0)
       dm-types (~> 1.2.0)
       dm-validations (~> 1.2.0)
-    dm-mysql-adapter (1.2.0)
-      dm-do-adapter (~> 1.2.0)
-      do_mysql (~> 0.10.6)
-    dm-sqlite-adapter (1.2.0)
-      dm-do-adapter (~> 1.2.0)
-      do_sqlite3 (~> 0.10.6)
     dm-timestamps (1.2.0)
       dm-core (~> 1.2.0)
     dm-validations (1.2.0)
@@ -126,6 +134,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-21
+  x86_64-darwin-20
 
 DEPENDENCIES
   data_mapper (= 1.2.0)
@@ -135,9 +144,9 @@ DEPENDENCIES
   dm-core!
   dm-do-adapter!
   dm-migrations!
-  dm-mysql-adapter (= 1.2.0)
+  dm-mysql-adapter!
   dm-serializer!
-  dm-sqlite-adapter (= 1.2.0)
+  dm-sqlite-adapter!
   dm-transactions!
   dm-types!
   do_mysql (= 0.10.17)!
@@ -146,7 +155,7 @@ DEPENDENCIES
   json (~> 2.6.3)
 
 RUBY VERSION
-   ruby 3.3.0.preview2
+   ruby 3.2.2p53
 
 BUNDLED WITH
    2.4.10
